@@ -1,0 +1,202 @@
+body {
+    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: rgb(0, 174, 239);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1rem;
+}
+
+.container .title {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container form input {
+    display: none;
+}
+
+.container form .category {
+    margin-top: 10px;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.category label {
+    height: 145px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+#inotive:checked~.category .inotiveMethod,
+#dana:checked~.category .danaMethod,
+#shopeepay:checked~.category .shopeepayMethod,
+#qris:checked~.category .qrisMethod,
+#linkaja:checked~.category .linkajaMethod,
+#gopay:checked~.category .gopayMethod,
+#bri:checked~.category .briMethod,
+#bca:checked~.category .bcaMethod,
+#mandiri:checked~.category .mandiriMethod,
+#bni:checked~.category .bniMethod,
+#tfbri:checked~.category .tfbriMethod,
+#tfmandiri:checked~.category .tfmandiriMethod,
+#tfbca:checked~.category .tfbcaMethod,
+#tfbtn:checked~.category .tfbtnMethod,
+#kartu:checked~.category .kartuMethod {
+    box-shadow: 0px 0px 0px 1px #6064b6;
+}
+
+#inotive:checked~.category .inotiveMethod .check,
+#dana:checked~.category .danaMethod .check,
+#shopeepay:checked~.category .shopeepayMethod .check,
+#qris:checked~.category .qrisMethod .check,
+#linkaja:checked~.category .linkajaMethod .check,
+#gopay:checked~.category .gopayMethod .check,
+#bri:checked~.category .briMethod .check,
+#bca:checked~.category .bcaMethod .check,
+#mandiri:checked~.category .mandiriMethod .check,
+#bni:checked~.category .bniMethod .check,
+#tfbri:checked~.category .tfbriMethod .check,
+#tfmandiri:checked~.category .tfmandiriMethod .check,
+#tfbca:checked~.category .tfbcaMethod .check,
+#tfbtn:checked~.category .tfbtnMethod .check,
+#kartu:checked~.category .kartuMethod .check {
+    display: block;
+}
+
+label .imgName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgName span {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 72%;
+    transform: translateY(-72%);
+}
+
+.imgName .imgContainer {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-35%);
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.inotive img {
+    width: 80px;
+}
+
+.dana img {
+    width: 80px;
+}
+
+.shopeepay img {
+    width: 80px;
+}
+
+.qris img {
+    width: 80px;
+}
+
+.linkaja img {
+    width: 80px;
+}
+
+.gopay img {
+    width: 80px;
+}
+
+.bri img {
+    width: 80px;
+}
+
+.mandiri img {
+    width: 100px;
+}
+
+.tfmandiri img {
+    width: 100px;
+}
+
+.tfbtn img {
+    width: 80px;
+}
+
+.bni img {
+    width: 80px;
+}
+
+.tfbca img {
+    width: 80px;
+}
+
+.kartu img {
+    width: 60px;
+}
+
+.check {
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.check i {
+    font-size: 18px;
+}
+
+button {
+    display: block;
+    background-color: rgb(152, 152, 152);
+    padding: 15px 220px;
+    border-radius: 4px;
+    font-size: 13px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
