@@ -1,0 +1,198 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: rgb(0, 174, 239);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(46, 45, 45);
+}
+
+h4 {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: rgb(207, 207, 207);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+fieldset label {
+    display: block;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+fieldset input[type="text"] {
+    margin-left: 13px;
+    width: 90%;
+    padding: 12px;
+    border: none;
+    background-color: #88888845;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.container form input {
+    display: none;
+}
+
+.container form .category {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.category label {
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+label:nth-child(2),
+label:nth-child(3) {
+    margin: 15px 0;
+}
+
+#inotive:checked~.category .inotiveMethod,
+#dana:checked~.category .danaMethod,
+#shopeepay:checked~.category .shopeepayMethod,
+#qris:checked~.category .qrisMethod,
+#linkaja:checked~.category .linkajaMethod,
+#gopay:checked~.category .gopayMethod,
+#bri:checked~.category .briMethod,
+#bca:checked~.category .bcaMethod,
+#mandiri:checked~.category .mandiriMethod,
+#bni:checked~.category .bniMethod,
+#tfbri:checked~.category .tfbriMethod,
+#tfmandiri:checked~.category .tfmandiriMethod,
+#tfbca:checked~.category .tfbcaMethod,
+#tfbtn:checked~.category .tfbtnMethod {
+    box-shadow: 0px 0px 0px 1px #6064b6;
+}
+
+#inotive:checked~.category .inotiveMethod .check,
+#dana:checked~.category .danaMethod .check,
+#shopeepay:checked~.category .shopeepayMethod .check,
+#qris:checked~.category .qrisMethod .check,
+#linkaja:checked~.category .linkajaMethod .check,
+#gopay:checked~.category .gopayMethod .check,
+#bri:checked~.category .briMethod .check,
+#bca:checked~.category .bcaMethod .check,
+#mandiri:checked~.category .mandiriMethod .check,
+#bni:checked~.category .bniMethod .check,
+#tfbri:checked~.category .tfbriMethod .check,
+#tfmandiri:checked~.category .tfmandiriMethod .check,
+#tfbca:checked~.category .tfbcaMethod .check,
+#tfbtn:checked~.category .tfbtnMethod .check {
+    display: block;
+}
+
+label .imgName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.imgName span {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgName .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 60px;
+    height: auto;
+}
+
+.visa img {
+    width: 60px;
+    margin-left: 5px;
+}
+
+.mastercard img {
+    width: 65px;
+}
+
+.paypal img {
+    width: 65px;
+}
+
+.AMEX img {
+    width: 60px;
+}
+
+.check {
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.check i {
+    font-size: 18px;
+    color: #6064b6;
+}
+
+.button-container {
+    display: flex;
+}
+
+.button-container button {
+    margin-right: 10px;
+    padding: 15px 105px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: rgb(152, 152, 152);
+    color: white;
+}
